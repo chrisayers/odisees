@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* ASDC ODISEES Data Portal Main CSS */
+
+/* Apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.chromeframe {
+	position: absolute;
+	top: 0;
+}
+body {
+	font: 13px Helmet, Freesans, sans-serif;
+	background: #000 url(../images/bg.jpg) top center no-repeat;
+}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection {
+ 	background: #46a0f3;
+ 	color: #000;
+ 	text-shadow: none;
+}
+::selection {
+	background: #46a0f3;
+	color: #000;
+	text-shadow: none;
+}
+/*	Begin custom site CSS */
+#container {
+	width: 1000px;
+	min-width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+}
+#header {
+	width: inherit;
+	height: 130px;
+	margin-top: 10px;
+}
+.logo {
+	float: left;
+}
+.search {
+	float: right;
+	margin-top: 44px;
+}
+input[type="search"] {
+	width: 150px;
+	height: 33px;
+}
+#content_box {
+	width: inherit;
+	margin-top: 10px;
+	min-height: 400px;
+	background: #fff;
+}
