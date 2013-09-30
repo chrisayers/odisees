@@ -5,10 +5,11 @@
 <title>ASDC ODISEES Data Portal</title>
 <link rel="stylesheet" href="css/reset.css" type="text/css" />
 <link rel="stylesheet" href="css/main.css" type="text/css" />
+<link href="css/custom-theme/jquery-ui-1.9.2.custom.css" rel="stylesheet">
 </head>
 
 <body id="index" class="home">
-<div id="container">
+<div id="container"> 
   <!-- Header Area -->
   <div id="header">
     <div class="logo"><img src="images/header.png" width="576" height="129" alt=""/></div>
@@ -19,10 +20,66 @@
       </form>
     </div>
   </div>
-  <!-- End Header Area -->
+  <!-- End Header Area --> 
   <!-- Content Area -->
-  <div id="content_box"></div>
-  <!-- End Content Area -->
+  <div id="content_box">
+    <div id="left-nav"> 
+      <!-- Begin Left Nav Accordion --> 
+      <!-- Left Navigation Accordion -->
+      <div style="width: 285px;" id="accordion">
+        <h3>Radiation</h3>
+        <div>
+          <p><strong>Data Source</strong><br>
+            <br>
+            <input type="checkbox" name="na" id="na">
+            <label for="na"></label>
+            Reanalysis<br>
+            <input type="checkbox" name="na2" id="na2">
+            <label for="na2"></label>
+            Satellite Observation <br>
+            <br>
+            <strong>Primary Attribute Type<br>
+            <br>
+            </strong>
+            <input type="checkbox" name="na3" id="na3">
+            Radiation<br>
+            <input type="checkbox" name="na4" id="na4">
+            Filtered Radiance <br>
+            <input type="checkbox" name="na5" id="na5">
+            Albedo <br>
+            <input type="checkbox" name="na6" id="na6">
+            Diffuse Flux <br>
+            <input type="checkbox" name="na7" id="na7">
+            Emissivity Flux <br>
+            <input type="checkbox" name="na8" id="na8">
+            Cloud Radiative Effects - Flux <br>
+            <input type="checkbox" name="na9" id="na9">
+            Unfiltered Radiance <br>
+            <input type="checkbox" name="na10" id="na10">
+            Flux <br>
+          </p>
+        </div>
+        <h3>Aerosols</h3>
+        <div>Phasellus mattis tincidunt nibh.</div>
+        <h3>Pressure</h3>
+        <div>Nam dui erat, auctor a, dignissim quis.</div>
+        <h3>Humidity</h3>
+        <div>Nam dui erat, auctor a, dignissim quis.</div>
+        <h3>Temperature</h3>
+        <div>Nam dui erat, auctor a, dignissim quis.</div>
+        <h3>Land Data</h3>
+        <div>Nam dui erat, auctor a, dignissim quis.</div>
+        <h3>Cloud</h3>
+        <div>Nam dui erat, auctor a, dignissim quis.</div>
+      </div>
+      
+      <!-- End Left Nav Accordion --> 
+    </div>
+  </div>
+  <!-- End Content Area --> 
 </div>
+<script src="js/jquery-1.8.3.js"></script> 
+<script src="js/jquery-ui-1.9.2.custom.js"></script> 
+<script src="js/ui.js"></script>
 </body>
 </html>
