@@ -62,3 +62,18 @@ input[type="search"] {
 	overflow: auto;
 
 }
+#footer {
+	width: inherit;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1em;
+	color: #707070;
+	text-align: center;
+}
+
+#footer a:link, #footer a:active, #footer a:visited {
+	color: #1667B2;
+}
+#footer a:hover {
+	color: #1667B2;
+}
