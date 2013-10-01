@@ -6,21 +6,23 @@
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	vertical-align: top;
 }
 .chromeframe {
 	position: absolute;
 	top: 0;
 }
 body {
-	font: 13px Helmet, Freesans, sans-serif;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 80%;
 	background: #000 url(../images/bg.jpg) top center no-repeat;
 }
 
 /* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
 ::-moz-selection {
- 	background: #46a0f3;
- 	color: #000;
- 	text-shadow: none;
+ background: #46a0f3;
+ color: #000;
+ text-shadow: none;
 }
 ::selection {
 	background: #46a0f3;
@@ -59,8 +61,12 @@ input[type="search"] {
 #left-nav {
 	display: inline-block;
 	margin: 10px;
-	overflow: auto;
-
+}
+#right-content {
+	display: inline-block;
+	vertical-align:top;
+	width: 660px;
+	margin: 12px 10px 10px 0;
 }
 #footer {
 	width: inherit;
@@ -70,10 +76,47 @@ input[type="search"] {
 	color: #707070;
 	text-align: center;
 }
-
 #footer a:link, #footer a:active, #footer a:visited {
 	color: #1667B2;
 }
 #footer a:hover {
-	color: #1667B2;
+	color: #1e76c7;
+}
+/* Styling for the table */
+
+#content-table {
+	font-size: 1em;
+	margin: 0px;
+	width: 680px;
+	text-align: left;
+	border-collapse: collapse;
+}
+#content-table thead th.bg {
+	background: #46a0f3;
+}
+#content-table th {
+	padding: 8px;
+	font-weight: normal;
+	font-size: 1em;
+	color: #fff;
+	background: #46a0f3;
+}
+#content-table td {
+	padding: 8px;
+	background: #eeeeee;
+	border-top: 1px solid #fff;
+	color: #000;
+}
+#content-table tfoot td.rounded-foot-left {
+	background: #d7dfe7;
+}
+#content-table tfoot td.rounded-foot-right {
+	background: #d7dfe7;
+}
+#content-table tbody tr:hover td {
+	background: #48a3f6;
+	color: #fff;
+}
+#content-table .odd {
+	background: #e8edff;
 }
